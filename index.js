@@ -13,7 +13,7 @@ function handleClick(e) {
 /* Write your implementation of displayMessage() */
 
 function greet(timeString) {
-  const hour = parseInt(timeString, 10)
+  const hour = parseInt(timeString)
   if (hour < 12) return "Good Morning"
   if (hour > 17) return "Good Evening"
   return "Good Afternoon"
@@ -21,5 +21,5 @@ function greet(timeString) {
 
 function displayMessage(msg) {
   document.getElementById("greeting").innerText = msg;
-  
+
 }
